@@ -6,10 +6,10 @@ const schema = require('../schema');
 const app = express();
 const PORT = 3001;
 
-app.use(
-  '/graphql',
-  graphqlHTTP(() => ({ schema })),
-);
+// app.use(
+//   '/graphql',
+//   graphqlHTTP(() => ({ schema })),
+// );
 app.use(
   '/voyager',
   voyagerMiddleware({
