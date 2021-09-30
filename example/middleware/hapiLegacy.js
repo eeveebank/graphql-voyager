@@ -11,18 +11,18 @@ server.connection({
 
 server.register(
   [
-    {
-      register: graphqlHapi,
-      options: {
-        path: '/graphql',
-        graphqlOptions: {
-          schema,
-        },
-        route: {
-          cors: true,
-        },
-      },
-    },
+    // {
+    //   register: graphqlHapi,
+    //   options: {
+    //     path: '/graphql',
+    //     graphqlOptions: {
+    //       schema,
+    //     },
+    //     route: {
+    //       cors: true,
+    //     },
+    //   },
+    // },
     {
       register: voyagerMiddleware,
       options: {

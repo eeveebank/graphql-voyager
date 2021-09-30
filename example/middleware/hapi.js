@@ -9,18 +9,18 @@ const server = new Hapi.Server({
 
 const init = async () => {
   await server.register([
-    {
-      plugin: graphqlHapi,
-      options: {
-        path: '/graphql',
-        graphqlOptions: {
-          schema,
-        },
-        route: {
-          cors: true,
-        },
-      },
-    },
+    // {
+    //   plugin: graphqlHapi,
+    //   options: {
+    //     path: '/graphql',
+    //     graphqlOptions: {
+    //       schema,
+    //     },
+    //     route: {
+    //       cors: true,
+    //     },
+    //   },
+    // },
     {
       plugin: voyagerMiddleware,
       options: {
